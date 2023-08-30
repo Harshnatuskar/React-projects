@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(104, 151, 163);
+  }
+  .quote-box{
+    width: 605px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  
+  .quote-box header{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  
+  }
+  
+  .quote-box .text{
+    margin: 35px 0;
+  } 
+  
+  .text .quote-area{
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .quote-area i:first-child{
+    margin: 2px 10px 0 0;
+  }
+  
+  .quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 2px 10px ;
+  }
+  
+  .quote-area .quote{
+    font-size: 20px;
+    text-align: center;
+    word-break: break-all;
+  }
+  
+  .text .author{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15spx;
+    font-style:oblique;
+    justify-content: flex-end;
+  }
+  
+  .author span:first-child{
+    margin: -10px 4px 0 0;
+    font-family:monospace; 
+  
+  }
+  
+  .wrapper .buttons{
+    border-top: 2px solid #eee;
+  }
+  
+  .buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .features ul{
+    display: flex;
+    text-decoration: none;
+  }
+  
+  .features ul li{
+    text-decoration: none;
+  }
+  
+  .features ul li:hover{
+    color:whitesmoke;
+    background:rgb(190, 190, 240) ;
+  }
+  
+  .features button{
+    border: none;
+    outline: none;
+    background: rgb(189, 202, 202);
+    padding:15px 25px;
+    font-size: 15 px;
+    border-radius: 10px;
+    background:#eee;
+  
+  }
