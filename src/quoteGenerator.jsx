@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 
 const stormlightQuotes = [
   {
@@ -16,19 +16,18 @@ const stormlightQuotes = [
   {
     quote: "\"Expectation is the root of all heartache.\"",
     author: "-Dalinar Kholin"
-  },
+  }, 
   {
     quote: "\"The most important step a person can take is always the next one.\"",
     author: "-Brandon Sanderson"
   },
 ];
-
+ 
 function QuoteGenerator() {
-  const [quoteIndex, setQuoteIndex] = useState(0);
-
-  function randomQ() {
+  const [quoteIndex, setQuoteIndex] = useState(0); 
+  function randomQ() { 
     const newIndex = Math.floor(Math.random() * stormlightQuotes.length);
-    setQuoteIndex(newIndex);
+    setQuoteIndex(newIndex); 
   }
 
   function tweetQuote() { 

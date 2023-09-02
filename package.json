@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Harshnatuskar.github.io/React-projects/quote-generator",
+  "homepage": "https://Harshnatuskar.github.io/quote-generator",
   "scripts": {
     "deploy": "gh-pages -d build",
     "dev": "vite",
@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
