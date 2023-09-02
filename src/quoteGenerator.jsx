@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 
 const stormlightQuotes = [
   {
-    quote: "Life before death. Strength before weakness. Journey before destination.",
-    author: "Kaladin Stormblessed"
+    quote: "\"Life before death. Strength before weakness. Journey before destination.\"",
+    author: "-Kaladin Stormblessed"
   },
   {
-    quote: "Words are where most change begins.",
-    author: "Navani Kholin"
+    quote: "\"Words are where most change begins.\"",
+    author: "-Navani Kholin"
   },
   {
-    quote: "The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.",
-    author: "Wit"
+    quote: "\"The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.\"",
+    author: "-Wit"
   }, 
   {
-    quote: "Expectation is the root of all heartache.",
-    author: "Dalinar Kholin"
+    quote: "\"Expectation is the root of all heartache.\"",
+    author: "-Dalinar Kholin"
   },
   {
-    quote: "The most important step a person can take is always the next one.",
-    author: "Brandon Sanderson"
+    quote: "\"The most important step a person can take is always the next one.\"",
+    author: "-Brandon Sanderson"
   },
 ];
 
@@ -34,7 +34,7 @@ function QuoteGenerator() {
   function tweetQuote() { 
     console.log('Tweeting quote:', stormlightQuotes[quoteIndex].quote);
   }
-
+  
   return (
     <div className="quote-container" id="quote-box">
       <div className="quote" id='text'>{stormlightQuotes[quoteIndex].quote}</div>
@@ -42,14 +42,12 @@ function QuoteGenerator() {
         <span className="name">{stormlightQuotes[quoteIndex].author}</span>
       </div>
       <div className="buttons">
-        <div className="features">
-          <ul>
-            <li className="tweet-quote">
+        <div className="features"> 
+            <button className="tweet-quote" >
               <a id="tweet-quote" href="https://twitter.com/intent/tweet" onClick={tweetQuote}>
-                <i className="twitter-symbol">Tweet</i>
+                Tweet
               </a>
-            </li>
-          </ul>
+            </button> 
           <button className="new-quote" id="new-quote" onClick={randomQ}>New Quote</button>
         </div>
       </div>
