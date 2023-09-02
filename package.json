@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://Harshnatuskar.github.io/quote-generator",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
